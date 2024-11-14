@@ -1,8 +1,8 @@
 /* File: styles.css */
 .gambar-kustom {
-    width: 300px; /* Atur lebar gambar */
-    height: auto; /* Sesuaikan tinggi secara proporsional */
-    border-radius: 8px; /* Membuat sudut gambar melengkung */
-    border: 2px solid #333; /* Memberikan border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Memberikan bayangan */
-  }
+  width: 300px; /* Atur lebar gambar */
+  height: auto; /* Sesuaikan tinggi secara proporsional */
+  border-radius: 8px; /* Membuat sudut gambar melengkung */
+  border: 2px solid #333; /* Memberikan border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Memberikan bayangan */
+}
