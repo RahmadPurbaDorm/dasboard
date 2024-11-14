@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoom Gambar</title>
+    <title>Zoom Gambar dengan Klik</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <div class="gallery">
     <div class="image-container">
-        <img src="1.jpeg" alt="Gambar 1" class="zoom-image">
+        <img src="1.jpeg" alt="Gambar 1" class="zoom-image" id="img1">
     </div>
     <div class="image-container">
-        <img src="2.jpeg" alt="Gambar 2" class="zoom-image">
+        <img src="2.jpeg" alt="Gambar 2" class="zoom-image" id="img2">
     </div>
     <div class="image-container">
-        <img src="3.jpeg" alt="Gambar 3" class="zoom-image">
+        <img src="3.jpeg" alt="Gambar 3" class="zoom-image" id="img3">
     </div>
     <div class="image-container">
-        <img src="4.jpeg" alt="Gambar 4" class="zoom-image">
+        <img src="4.jpeg" alt="Gambar 4" class="zoom-image" id="img4">
     </div>
     <div class="image-container">
-        <img src="5.jpeg" alt="Gambar 5" class="zoom-image">
+        <img src="5.jpeg" alt="Gambar 5" class="zoom-image" id="img5">
     </div>
     <div class="image-container">
-        <img src="6.jpeg" alt="Gambar 6" class="zoom-image">
+        <img src="6.jpeg" alt="Gambar 6" class="zoom-image" id="img6">
     </div>
 </div>
 
+<!-- Modal Zoom -->
+<div id="zoomModal" class="zoom-modal">
+    <span class="close" onclick="closeZoom()">&times;</span>
+    <img class="modal-content" id="modalImg">
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
