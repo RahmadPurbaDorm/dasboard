@@ -3,38 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoom Gambar dengan Klik</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Menyertakan file CSS -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            flex-wrap: wrap; /* Memungkinkan gambar untuk wrap ke baris berikutnya */
+        }
+
+        .image-container {
+            position: relative;
+            cursor: pointer;
+            width: calc(33.33% - 10px); /* Membuat gambar memiliki lebar 1/3 dari lebar kontainer */
+            margin: 5px; /* Memberikan jarak antar gambar */
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Overlay style for zoom effect */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .overlay img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 <body>
 
-<div class="gallery">
-    <div class="image-container">
-        <img src="1.jpeg" alt="Gambar 1" class="zoom-image" id="img1">
+    <!-- Container untuk 6 Gambar -->
+    <div class="image-container" onclick="openOverlay()">
+        <img src="1.jpeg" alt="Thumbnail 1" class="gambar-kustom">
     </div>
-    <div class="image-container">
-        <img src="2.jpeg" alt="Gambar 2" class="zoom-image" id="img2">
+    <div class="image-container" onclick="openOverlay()">
+        <img src="2.jpeg" alt="Thumbnail 2" class="gambar-kustom">
     </div>
-    <div class="image-container">
-        <img src="3.jpeg" alt="Gambar 3" class="zoom-image" id="img3">
+    <div class="image-container" onclick="openOverlay()">
+        <img src="3.jpeg" alt="Thumbnail 3" class="gambar-kustom">
     </div>
-    <div class="image-container">
-        <img src="4.jpeg" alt="Gambar 4" class="zoom-image" id="img4">
+    <div class="image-container" onclick="openOverlay()">
+        <img src="4.jpeg" alt="Thumbnail 4" class="gambar-kustom">
     </div>
-    <div class="image-container">
-        <img src="5.jpeg" alt="Gambar 5" class="zoom-image" id="img5">
+    <div class="image-container" onclick="openOverlay()">
+        <img src="5.jpeg" alt="Thumbnail 5" class="gambar-kustom">
     </div>
-    <div class="image-container">
-        <img src="6.jpeg" alt="Gambar 6" class="zoom-image" id="img6">
+    <div class="image-container" onclick="openOverlay()">
+        <img src="6.jpeg" alt="Thumbnail 6" class="gambar-kustom">
     </div>
-</div>
 
-<!-- Modal Zoom -->
-<div id="zoomModal" class="zoom-modal">
-    <span class="close" onclick="closeZoom()">&times;</span>
-    <img class="modal-content" id="modalImg">
-</div>
+    <!-- Overlay untuk Zoomed Image -->
+    <div class="overlay" id="overlay" onclick="closeOverlay()">
+        <img src="favicon.ico" alt="Zoomed Image">
+    </div>
 
-<script src="script.js"></script>
+    <script>
+        // Fungsi untuk membuka overlay
+        function openOverlay() {
+            document.getElementById("overlay").style.display = "flex";
+        }
+
+        // Fungsi untuk menutup overlay
+        function closeOverlay() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
 </body>
 </html>
