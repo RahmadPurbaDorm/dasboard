@@ -19,4 +19,9 @@ body {
     height: auto;
     border-radius: 8px; /* Sudut melengkung */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Efek transisi ketika zoom */
+}
+
+.image-container img:hover {
+    transform: scale(1.2); /* Zoom-in gambar saat hover */
 }
