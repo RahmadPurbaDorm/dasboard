@@ -1,4 +1,4 @@
-<script>
+
     // Tambahkan event listener untuk semua gambar dengan class "zoomable"
     document.querySelectorAll('.zoomable').forEach(img => {
         img.addEventListener('click', () => {
@@ -10,5 +10,5 @@
             modal.style.display = 'flex'; // Tampilkan modal
         });
     });
-</script>
+
 
