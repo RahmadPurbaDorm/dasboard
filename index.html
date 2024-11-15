@@ -1,450 +1,63 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .image-container {
-            position: relative;
-            cursor: pointer;
-            width: 300px;
-            transition: transform 0.3s ease;
-        }
-
-        .image-container img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Overlay style for zoom effect */
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .overlay img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Thumbnail Image -->
-    <div class="image-container" onclick="openOverlay()">
-        <img src="1.jpeg" alt="Thumbnail">
-    </div>
-
-    <!-- Overlay for Zoomed Image -->
-    <div class="overlay" id="overlay" onclick="closeOverlay()">
-        <img src="1.jpeg" alt="Zoomed Image">
-    </div>
-
-    <script>
-        // Function to open overlay
-        function openOverlay() {
-            document.getElementById("overlay").style.display = "flex";
-        }
-
-        // Function to close overlay
-        function closeOverlay() {
-            document.getElementById("overlay").style.display = "none";
-        }
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .image-container {
-            position: relative;
-            cursor: pointer;
-            width: 300px;
-            transition: transform 0.3s ease;
-        }
-
-        .image-container img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Overlay style for zoom effect */
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .overlay img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Thumbnail Image -->
-    <div class="image-container" onclick="openOverlay()">
-        <img src="2.jpeg" alt="Thumbnail">
-    </div>
-
-    <!-- Overlay for Zoomed Image -->
-    <div class="overlay" id="overlay" onclick="closeOverlay()">
-        <img src="2.jpeg" alt="Zoomed Image">
-    </div>
-
-    <script>
-        // Function to open overlay
-        function openOverlay() {
-            document.getElementById("overlay").style.display = "flex";
-        }
-
-        // Function to close overlay
-        function closeOverlay() {
-            document.getElementById("overlay").style.display = "none";
-        }
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .image-container {
-            position: relative;
-            cursor: pointer;
-            width: 300px;
-            transition: transform 0.3s ease;
-        }
-
-        .image-container img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Overlay style for zoom effect */
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .overlay img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Thumbnail Image -->
-    <div class="image-container" onclick="openOverlay()">
-        <img src="3.jpeg" alt="Thumbnail">
-    </div>
-
-    <!-- Overlay for Zoomed Image -->
-    <div class="overlay" id="overlay" onclick="closeOverlay()">
-        <img src="3.jpeg" alt="Zoomed Image">
-    </div>
-
-    <script>
-        // Function to open overlay
-        function openOverlay() {
-            document.getElementById("overlay").style.display = "flex";
-        }
-
-        // Function to close overlay
-        function closeOverlay() {
-            document.getElementById("overlay").style.display = "none";
-        }
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .image-container {
-            position: relative;
-            cursor: pointer;
-            width: 300px;
-            transition: transform 0.3s ease;
-        }
-
-        .image-container img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Overlay style for zoom effect */
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .overlay img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Thumbnail Image -->
-    <div class="image-container" onclick="openOverlay()">
-        <img src="4.jpeg" alt="Thumbnail">
-    </div>
-
-    <!-- Overlay for Zoomed Image -->
-    <div class="overlay" id="overlay" onclick="closeOverlay()">
-        <img src="4.jpeg" alt="Zoomed Image">
-    </div>
-
-    <script>
-        // Function to open overlay
-        function openOverlay() {
-            document.getElementById("overlay").style.display = "flex";
-        }
-
-        // Function to close overlay
-        function closeOverlay() {
-            document.getElementById("overlay").style.display = "none";
-        }
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .image-container {
-            position: relative;
-            cursor: pointer;
-            width: 300px;
-            transition: transform 0.3s ease;
-        }
-
-        .image-container img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Overlay style for zoom effect */
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .overlay img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Thumbnail Image -->
-    <div class="image-container" onclick="openOverlay()">
-        <img src="5.jpeg" alt="Thumbnail">
-    </div>
-
-    <!-- Overlay for Zoomed Image -->
-    <div class="overlay" id="overlay" onclick="closeOverlay()">
-        <img src="5.jpeg" alt="Zoomed Image">
-    </div>
-
-    <script>
-        // Function to open overlay
-        function openOverlay() {
-            document.getElementById("overlay").style.display = "flex";
-        }
-
-        // Function to close overlay
-        function closeOverlay() {
-            document.getElementById("overlay").style.display = "none";
-        }
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .image-container {
-            position: relative;
-            cursor: pointer;
-            width: 300px;
-            transition: transform 0.3s ease;
-        }
-
-        .image-container img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Overlay style for zoom effect */
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .overlay img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Thumbnail Image -->
-    <div class="image-container" onclick="openOverlay()">
-        <img src="6.jpeg" alt="Thumbnail">
-    </div>
-
-    <!-- Overlay for Zoomed Image -->
-    <div class="overlay" id="overlay" onclick="closeOverlay()">
-        <img src="6.jpeg" alt="Zoomed Image">
-    </div>
-
-    <script>
-        // Function to open overlay
-        function openOverlay() {
-            document.getElementById("overlay").style.display = "flex";
-        }
-
-        // Function to close overlay
-        function closeOverlay() {
-            document.getElementById("overlay").style.display = "none";
-        }
-    </script>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog rahmad kost</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Blog rahmad kost</h1>
+            <nav>
+                <a href="https://rahmadpurbadorm.github.io/">Beranda</a>
+                <a href="https://rahmadpurbadorm.github.io/pricelist/">Price List</a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B6282167621663&text&type=phone_number&app_absent=0">Kontak</a>
+            </nav>
+        </header>
+    
+        <main>
+            <div class="blog-container">
+                <!-- Postingan 1 -->
+                <div class="blog-post">
+                    <img src="kost.jpg" width="350px" height="350px" alt="Gambar Postingan" class="zoomable">
+                    <h2>"Kost-Kostan Murah dan Nyaman Dekat Kota: Solusi Hunian Ideal!"</h2>
+                    <p>Tanggal: 14 November 2024</p>
+                    <p>
+                        Mencari tempat tinggal yang nyaman dan strategis di dekat pusat kota bisa menjadi tantangan tersendiri. 
+                        Biaya sewa yang tinggi seringkali menjadi kendala bagi sebagian besar mahasiswa dan pekerja muda.
+                         Namun, ada beberapa kost-kostan yang menawarkan harga terjangkau tanpa mengurangi kenyamanan.</p>
+                    <button onclick="readMore()">Baca Selengkapnya</button>
+                </div>
+                <!-- Postingan 2 -->
+                <div class="blog-post">
+                    <img src="cafe.png" width="350px" height="350px" alt="Gambar Postingan" class="zoomable">
+                    <h2>"Lebih dari Sekadar Tempat Tinggal: Mengapa Kost Dekat Cafe Jadi Pilihan Favorit"</h2>
+                    <p>Tanggal: 13 November 2024</p>
+                    <p>Mencari kost yang dekat dengan cafe kini menjadi pilihan populer bagi banyak anak kost,
+                         terutama bagi mereka yang membutuhkan suasana nyaman untuk belajar atau sekadar bersantai. 
+                         Kost yang terletak dekat dengan cafe menawarkan banyak keuntungan, seperti kemudahan akses ke tempat makan, kopi, dan lingkungan yang mendukung untuk produktivitas. </p>
+                    <button onclick="readMore()">Baca Selengkapnya</button>
+                </div>
+                <!-- Postingan 3 -->
+                <div class="blog-post">
+                    <img src="ramayana.jpg" width="350px" height="350px" alt="Gambar Postingan" class="zoomable">
+                    <h2>"Kost Dekat Mall: Hidup Lebih Seru, Tanpa Harus Jauh-Jauh!"</h2>
+                    <p>Tanggal: 12 November 2024</p>
+                    <p>Bayangkan ini: kamu baru selesai kuliah atau kerja, sudah capek banget,
+                         perut mulai keroncongan, dan ingin beli sesuatu yang baru.
+                         Apa yang kamu lakukan? Kalau kostmu dekat mall, tinggal jalan kaki beberapa langkah,
+                         semua kebutuhan bisa langsung dipenuhi! Kalau kamu tipe yang gak bisa jauh-jauh dari tempat makan enak,
+                         belanja impulsif, atau butuh hiburan di akhir pekan,
+                         kost dekat mall mungkin pilihan paling tepat untuk kamu.</p>
+                    <button onclick="readMore()">Baca Selengkapnya</button>
+                </div>
+            </div>
+        </main>
+        <div class="footer">
+        <footer>
+            <p>&copy; 2024 Blog Rahmad kost. Semua Hak Dilindungi.</p>
+        </footer>
+        </div>
+    </body>
+    </html>
